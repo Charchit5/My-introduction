@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My introduction</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page active" id = "welcome">
+            <div class="content">
+                <h1> Hi, I am Charchit</h1>
+                <p>Welcome to my Profile. <br></br></p>
+                <button onclick="goToPage('study')">Click Here!</button>
+            </div>
+        </div>
+        
+        <div class= "page" id = "study">
+            <div class= "content">
+                <h1> Academic Interest ❄️</h1>
+                <p>As a mechatronics engineering student, I stay calm and focused like ice. I strive to build efficient systems and deepen my knowledge in robotics, automation, design, and software.</p>
+                <canvas id="studyCanvas"></canvas>
+                <button onclick="goToPage('hobbies')"> Next: Meet my doppelganger❄️</button>
+            </div>
+        </div>
+
+        <div class = "page" id = "hobbies">
+            <div class = "content">
+                <h1> Hobbies🔥</h1>
+                <p>My hobbies ignite my energy - sketching, designing and playing badminton are my passion.</p>
+                <canvas> id = "hobbyCanvas"</canvas>
+                <button onclick = "goToPage('contact')">Contact Me Here!🔥</button>
+            </div>
+        </div>
+
+    <div class="page" id = "contact">
+        <div class="content">
+            <h1>Contact Me</h1>
+            <p>Let's connect! You can find me on:</p>
+            <p>
+                <a href="mailto:charchitbhatnagar25@gmail.com">Email</a>
+            </p>
+
+            <p>
+               <a href="https://www.linkedin.com/in/charchit-bhatnagar-74551a283" target="_blank">LinkedIn</a>
+            </p>
+
+            <p>
+                <a href="https://www.instagram.com/char_chitbhatnagar">Instagram</a>
+            </p>
+
+            <button onclick="goToPage('welcome')"> Back to Home</button>
+        </div>
+    </div>
+
+    
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
